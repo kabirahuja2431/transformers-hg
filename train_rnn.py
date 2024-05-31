@@ -40,6 +40,7 @@ from models.rnn_lm import RNNLM
 from models.rnn_enc_dec import RNNEncDec
 from interfaces.rnn.lm_interface import RNNLMInterface
 from interfaces.rnn.enc_dec_interface import RNNEncDecInterface
+from train_transformers import WANDB_ENTITY_NAME
 
 
 class AttrDict(dict):
@@ -151,17 +152,16 @@ def get_rnn_enc_dec(args, in_vocab, out_vocab, model_name=None):
         dropout=args.dropout,
         tied_embedding=args.tied_embedding,
     )
-    
+
     if model_name:
         print(f"Loading model from {model_name}")
         model.load_state_dict(torch.load(model_name, map_location=torch.device("cpu")))
-    
+
     interface = RNNEncDecInterface(
         model,
         label_smoothing=args.label_smoothing,
     )
     return model, interface
-    
 
 
 def main_lm(args):
@@ -469,7 +469,7 @@ if __name__ == "__main__":
     set_seed(args)
 
     wandb_logger = wandb.init(
-        project="structural-grokking", entity="kabirahuja2431", config=vars(args)
+        project="structural-grokking", entity=WANDB_ENTITY_NAME, config=vars(args)
     )
     args = AttrDict((wandb_logger.config))
 

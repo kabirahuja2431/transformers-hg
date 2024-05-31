@@ -21,6 +21,7 @@ from data_utils.qf_de_helpers import (
     eval_qf_de_mlm_callback,
 )
 from training_utils import get_grad_norm, get_opt, get_scheduler, plotting_util
+from train_transformers import WANDB_ENTITY_NAME
 import collate
 
 
@@ -336,7 +337,7 @@ if __name__ == "__main__":
     set_seed(args)
 
     wandb.init(
-        project="structural-grokking", entity="kabirahuja2431", config=vars(args)
+        project="structural-grokking", entity=WANDB_ENTITY_NAME, config=vars(args)
     )
 
     if args.save_dir != "":
