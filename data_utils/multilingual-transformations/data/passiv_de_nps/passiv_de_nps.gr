@@ -1,0 +1,199 @@
+
+
+1	ROOT	S .
+
+1	S	NP_M_S_Nom VP_M_S
+1	S	NP_M_P_Nom VP_M_P
+
+2	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom
+1	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom Prep Det_S_Dat N2 N_S_Dat
+1	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom Prep Det_P_Dat N2 N_P_Dat
+
+2	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom
+1	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom Prep Det_S_Dat N2 N_S_Dat
+1	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom Prep Det_P_Dat N2 N_P_Dat
+
+2	NP_O	Det_S_Acc N5S N_S_Acc
+2	NP_O	Det_P_Acc N5P N_P_Acc
+1	NP_O	Det_S_Acc N5S N_S_Acc Prep Det_S_Dat N2 N_S_Dat
+1	NP_O	Det_P_Acc N5P N_P_Acc Prep Det_P_Dat N2 N_P_Dat
+1	NP_O	Det_S_Acc N5S N_S_Acc Prep Det_S_Dat N2 N_S_Dat
+1	NP_O	Det_P_Acc N5P N_P_Acc Prep Det_P_Dat N2 N_P_Dat
+
+
+1	VP_M_S	VT3 V_trans_S NP_O 
+
+1	VP_M_P	VT3 V_trans_P NP_O 
+
+1	Det_S_Nom	der
+1	Det_S_Nom	ein
+1	Det_S_Nom	mein
+1	Det_S_Nom	dein
+1	Det_S_Nom	unser
+1	Det_S_Nom	ihr
+
+1	Det_S_Acc	den
+1	Det_S_Acc	einen
+1	Det_S_Acc	meinen
+1	Det_S_Acc	deinen
+1	Det_S_Acc	unseren
+1	Det_S_Acc	ihren
+
+1	Det_S_Dat	dem
+1	Det_S_Dat	einem
+1	Det_S_Dat	meinem
+1	Det_S_Dat	deinem
+1	Det_S_Dat	unserem
+1	Det_S_Dat	ihrem
+
+1	Det_P_Nom	die
+1	Det_P_Nom	einige
+1	Det_P_Nom	meine
+1	Det_P_Nom	deine
+1	Det_P_Nom	unsere
+1	Det_P_Nom	ihre
+
+1	Det_P_Acc	die
+1	Det_P_Acc	einige
+1	Det_P_Acc	meine
+1	Det_P_Acc	deine
+1	Det_P_Acc	unsere
+1	Det_P_Acc	ihre
+
+1	Det_P_Dat	den
+1	Det_P_Dat	einigen
+1	Det_P_Dat	meinen
+1	Det_P_Dat	deinen
+1	Det_P_Dat	unseren
+1	Det_P_Dat	ihren
+
+1	N_S_Nom	Molch
+1	N_S_Nom	Löwe
+1	N_S_Nom	Pfau
+1	N_S_Nom	Kater
+1	N_S_Nom	Rabe
+1	N_S_Nom	Salamander
+1	N_S_Nom	Dinosaurier
+1	N_S_Nom	Papagei
+1	N_S_Nom	Geier
+1	N_S_Nom	Wellensittich
+1	N_S_Nom	Esel
+1	N_S_Nom	Hund
+1	N_S_Nom	Ziesel
+
+1	N_S_Acc	Molch
+1	N_S_Acc Löwen
+1	N_S_Acc	Pfau
+1	N_S_Acc	Kater
+1	N_S_Acc	Raben
+1	N_S_Acc	Salamander
+1	N_S_Acc	Dinosaurier
+1	N_S_Acc	Papagei
+1	N_S_Acc	Geier
+1	N_S_Acc	Wellensittich
+1	N_S_Acc	Esel
+1	N_S_Acc	Hund
+1	N_S_Acc	Ziesel
+
+1	N_S_Dat	Molch
+1	N_S_Dat	Löwen
+1	N_S_Dat	Pfau
+1	N_S_Dat	Kater
+1	N_S_Dat	Raben
+1	N_S_Dat	Salamander
+1	N_S_Dat	Dinosaurier
+1	N_S_Dat	Papagei
+1	N_S_Dat	Geier
+1	N_S_Dat	Wellensittich
+1	N_S_Dat	Esel
+1	N_S_Dat	Hund
+1	N_S_Dat	Ziesel
+
+1	N_P_Nom	Molche
+1	N_P_Nom	Löwen
+1	N_P_Nom	Pfaue
+1	N_P_Nom	Kater
+1	N_P_Nom	Raben
+1	N_P_Nom	Salamander
+1	N_P_Nom	Dinosaurier
+1	N_P_Nom	Papageie
+1	N_P_Nom	Geier
+1	N_P_Nom	Wellensittiche
+1	N_P_Nom	Esel
+1	N_P_Nom	Hunde
+1	N_P_Nom	Ziesel
+
+1	N_P_Acc	Molche
+1	N_P_Acc	Löwen
+1	N_P_Acc	Pfaue
+1	N_P_Acc	Kater
+1	N_P_Acc	Raben
+1	N_P_Acc	Salamander
+1	N_P_Acc	Dinosaurier
+1	N_P_Acc	Papageie
+1	N_P_Acc	Geier
+1	N_P_Acc	Wellensittiche
+1	N_P_Acc	Esel
+1	N_P_Acc	Hunde
+1	N_P_Acc	Ziesel
+
+1	N_P_Dat	Molchen
+1	N_P_Dat	Löwen
+1	N_P_Dat	Pfauen
+1	N_P_Dat	Katern
+1	N_P_Dat	Raben
+1	N_P_Dat	Salamandern
+1	N_P_Dat	Dinosauriern
+1	N_P_Dat	Papageien
+1	N_P_Dat	Geiern
+1	N_P_Dat	Wellensittichen
+1	N_P_Dat	Eseln
+1	N_P_Dat	Hunden
+1	N_P_Dat	Zieseln
+
+1	V_intrans_S	lachte
+1	V_intrans_S	lächelte
+1	V_intrans_S	schlief
+1	V_intrans_S	feierte
+1	V_intrans_S	wartete
+1	V_intrans_S	arbeitete
+1	V_intrans_S	badete
+1	V_intrans_S	las
+1	V_intrans_S	aß
+
+1	V_intrans_P	lachten
+1	V_intrans_P	lächelten
+1	V_intrans_P	schliefen
+1	V_intrans_P	feierten
+1	V_intrans_P	warteten
+1	V_intrans_P	arbeiteten
+1	V_intrans_P	badeten
+1	V_intrans_P	lasen
+1	V_intrans_P	aßen
+
+1	V_trans_S	unterhielt
+1	V_trans_S	amüsierte
+1	V_trans_S	nervte
+1	V_trans_S	erfreute
+1	V_trans_S	verwirrte
+1	V_trans_S	bewunderte
+1	V_trans_S	akzeptierte
+1	V_trans_S	bedauerte
+1	V_trans_S	tröstete
+
+1	V_trans_P	unterhielten
+1	V_trans_P	amüsierten
+1	V_trans_P	nervten
+1	V_trans_P	erfreuten
+1	V_trans_P	verwirrten
+1	V_trans_P	bewunderten
+1	V_trans_P	akzeptierten
+1	V_trans_P	bedauerten
+1	V_trans_P	trösteten
+
+1	Prep	bei
+1	Prep	neben
+1	Prep	hinter
+1	Prep	über
+1	Prep	unter	
+

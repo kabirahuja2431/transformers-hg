@@ -1,0 +1,230 @@
+
+
+1	ROOT	S .
+
+1	S	NP_M_S_Nom VP_M_S
+1	S	NP_M_P_Nom VP_M_P
+
+2	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom
+1	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom Prep Det_S_Dat N2 N_S_Dat
+1	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom Prep Det_P_Dat N2 N_P_Dat
+2	NP_M_S_Nom	Det_S_Nom N1S N_S_Nom , RC_S , 
+
+2	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom
+1	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom Prep Det_S_Dat N2 N_S_Dat
+1	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom Prep Det_P_Dat N2 N_P_Dat
+2	NP_M_P_Nom	Det_P_Nom N1P N_P_Nom , RC_P ,
+
+2	NP_O	Det_S_Acc N5S N_S_Acc
+2	NP_O	Det_P_Acc N5P N_P_Acc
+1	NP_O	Det_S_Acc N5S N_S_Acc Prep Det_S_Dat N2 N_S_Dat
+1	NP_O	Det_P_Acc N5P N_P_Acc Prep Det_P_Dat N2 N_P_Dat
+1	NP_O	Det_S_Acc N5S N_S_Acc Prep Det_S_Dat N2 N_S_Dat
+1	NP_O	Det_P_Acc N5P N_P_Acc Prep Det_P_Dat N2 N_P_Dat
+2	NP_O	Det_S_Acc N5S N_S_Acc , RC_S ,
+2	NP_O	Det_P_Acc N5P N_P_Acc , RC_P ,
+
+
+1	VP_M_S	VT3 V_trans_S NP_O 
+
+1	VP_M_P	VT3 V_trans_P NP_O 
+
+2	RC_S	RN Rel_S_Nom VI1 V_intrans_S 
+1	RC_S	RA Rel_S_Acc Det_S_Nom N3 N_S_Nom VT1 V_trans_S
+1	RC_S	RA Rel_S_Acc Det_P_Nom N3 N_P_Nom VT1 V_trans_P
+1	RC_S	RN Rel_S_Nom Det_S_Acc N4 N_S_Acc VT2 V_trans_S
+1	RC_S	RN Rel_S_Nom Det_P_Acc N4 N_P_Acc VT2 V_trans_S
+
+
+2	RC_P	RN Rel_S_Nom VI1 V_intrans_P 
+1	RC_P	RA Rel_S_Acc Det_S_Nom N3 N_S_Nom VT1 V_trans_S
+1	RC_P	RA Rel_S_Acc Det_P_Nom N3 N_P_Nom VT1 V_trans_P
+1	RC_P	RN Rel_S_Nom Det_S_Acc N4 N_S_Acc VT2 V_trans_P
+1	RC_P	RN Rel_S_Nom Det_P_Acc N4 N_P_Acc VT2 V_trans_P
+
+
+1	Det_S_Nom	die
+1	Det_S_Nom	eine
+1	Det_S_Nom	meine
+1	Det_S_Nom	deine
+1	Det_S_Nom	unsere
+1	Det_S_Nom	ihre
+
+1	Det_S_Acc	die
+1	Det_S_Acc	eine
+1	Det_S_Acc	meine
+1	Det_S_Acc	deine
+1	Det_S_Acc	unsere
+1	Det_S_Acc	ihre
+
+1	Det_S_Dat	der
+1	Det_S_Dat	einer
+1	Det_S_Dat	meiner
+1	Det_S_Dat	deiner
+1	Det_S_Dat	unserer
+1	Det_S_Dat	ihrer
+
+1	Det_P_Nom	die
+1	Det_P_Nom	einige
+1	Det_P_Nom	meine
+1	Det_P_Nom	deine
+1	Det_P_Nom	unsere
+1	Det_P_Nom	ihre
+
+1	Det_P_Acc	die
+1	Det_P_Acc	einige
+1	Det_P_Acc	meine
+1	Det_P_Acc	deine
+1	Det_P_Acc	unsere
+1	Det_P_Acc	ihre
+
+1	Det_P_Dat	den
+1	Det_P_Dat	einigen
+1	Det_P_Dat	meinen
+1	Det_P_Dat	deinen
+1	Det_P_Dat	unseren
+1	Det_P_Dat	ihren
+
+1	N_S_Nom	Kuh
+1	N_S_Nom	Katze
+1	N_S_Nom	Mücke
+1	N_S_Nom	Raupe
+1	N_S_Nom	Robbe
+1	N_S_Nom	Kröte
+1	N_S_Nom	Maus
+1	N_S_Nom	Taube
+1	N_S_Nom	Schnecke
+1	N_S_Nom	Gans
+1	N_S_Nom	Ente
+1	N_S_Nom	Giraffe
+1	N_S_Nom	Krake
+
+1	N_S_Acc	Kuh
+1	N_S_Acc	Katze
+1	N_S_Acc	Mücke
+1	N_S_Acc	Raupe
+1	N_S_Acc	Robbe
+1	N_S_Acc	Kröte
+1	N_S_Acc	Maus
+1	N_S_Acc	Taube
+1	N_S_Acc	Schnecke
+1	N_S_Acc	Gans
+1	N_S_Acc	Ente
+1	N_S_Acc	Giraffe
+1	N_S_Acc	Krake
+
+1	N_S_Dat	Kuh
+1	N_S_Dat	Katze
+1	N_S_Dat	Mücke
+1	N_S_Dat	Raupe
+1	N_S_Dat	Robbe
+1	N_S_Dat	Kröte
+1	N_S_Dat	Maus
+1	N_S_Dat	Taube
+1	N_S_Dat	Schnecke
+1	N_S_Dat	Gans
+1	N_S_Dat	Ente
+1	N_S_Dat	Giraffe
+1	N_S_Dat	Krake
+
+1	N_P_Nom	Kühe
+1	N_P_Nom	Katzen
+1	N_P_Nom	Mücken
+1	N_P_Nom	Raupen
+1	N_P_Nom	Robben
+1	N_P_Nom	Kröten
+1	N_P_Nom	Mäuse
+1	N_P_Nom	Tauben
+1	N_P_Nom	Schnecken
+1	N_P_Nom	Gänse
+1	N_P_Nom	Enten
+1	N_P_Nom	Giraffen
+1	N_P_Nom	Kraken
+
+1	N_P_Acc	Kühe
+1	N_P_Acc	Katzen
+1	N_P_Acc	Mücken
+1	N_P_Acc	Raupen
+1	N_P_Acc	Robben
+1	N_P_Acc	Kröten
+1	N_P_Acc	Mäuse
+1	N_P_Acc	Tauben
+1	N_P_Acc	Schnecken
+1	N_P_Acc	Gänse
+1	N_P_Acc	Enten
+1	N_P_Acc	Giraffen
+1	N_P_Acc	Kraken
+
+1	N_P_Dat	Kühen
+1	N_P_Dat	Katzen
+1	N_P_Dat	Mücken
+1	N_P_Dat	Raupen
+1	N_P_Dat	Robben
+1	N_P_Dat	Kröten
+1	N_P_Dat	Mäusen
+1	N_P_Dat	Tauben
+1	N_P_Dat	Schnecken
+1	N_P_Dat	Gänsen
+1	N_P_Dat	Enten
+1	N_P_Dat	Giraffen
+1	N_P_Dat	Kraken
+
+1	V_intrans_S	lachte
+1	V_intrans_S	lächelte
+1	V_intrans_S	schlief
+1	V_intrans_S	feierte
+1	V_intrans_S	wartete
+1	V_intrans_S	arbeitete
+1	V_intrans_S	badete
+1	V_intrans_S	las
+1	V_intrans_S	aß
+
+1	V_intrans_P	lachten
+1	V_intrans_P	lächelten
+1	V_intrans_P	schliefen
+1	V_intrans_P	feierten
+1	V_intrans_P	warteten
+1	V_intrans_P	arbeiteten
+1	V_intrans_P	badeten
+1	V_intrans_P	lasen
+1	V_intrans_P	aßen
+
+1	V_trans_S	unterhielt
+1	V_trans_S	amüsierte
+1	V_trans_S	nervte
+1	V_trans_S	erfreute
+1	V_trans_S	verwirrte
+1	V_trans_S	bewunderte
+1	V_trans_S	akzeptierte
+1	V_trans_S	bedauerte
+1	V_trans_S	tröstete
+
+1	V_trans_P	unterhielten
+1	V_trans_P	amüsierten
+1	V_trans_P	nervten
+1	V_trans_P	erfreuten
+1	V_trans_P	verwirrten
+1	V_trans_P	bewunderten
+1	V_trans_P	akzeptierten
+1	V_trans_P	bedauerten
+1	V_trans_P	trösteten
+
+1	Prep	bei
+1	Prep	neben
+1	Prep	hinter
+1	Prep	über
+1	Prep	unter
+
+
+1	Rel_S_Nom	die
+1	Rel_S_Nom	welche
+
+1	Rel_S_Acc	die
+1	Rel_S_Acc	welche
+
+1	Rel_P_Nom	die
+1	Rel_P_Nom	welche	
+
+1	Rel_P_Acc	die	
+1	Rel_P_Nom	welche	
+

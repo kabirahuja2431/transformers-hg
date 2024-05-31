@@ -1,0 +1,131 @@
+det	the
+det	some
+det	my
+det	your
+det	our
+det	her
+
+n_s	newt
+n_s	orangutan
+n_s	peacock
+n_s	quail
+n_s	raven
+n_s	salamander
+n_s	tyrannosaurus
+n_s	unicorn
+n_s	vulture
+n_s	walrus
+n_s	xylophone
+n_s	yak
+n_s	zebra
+
+n_p	newts
+n_p	orangutans
+n_p	peacocks
+n_p	quails
+n_p	ravens
+n_p	salamanders
+n_p	tyrannosauruses
+n_p	unicorns
+n_p	vultures
+n_p	walruses
+n_p	xylophones
+n_p	yaks
+n_p	zebras
+
+v_intrans	giggle
+v_intrans	smile
+v_intrans	sleep
+v_intrans	swim
+v_intrans	wait
+v_intrans	move
+v_intrans	change
+v_intrans	read
+v_intrans	eat
+
+v_s_intrans	giggles
+v_s_intrans	smiles
+v_s_intrans	sleeps
+v_s_intrans	swims
+v_s_intrans	waits
+v_s_intrans	moves
+v_s_intrans	changes
+v_s_intrans	reads
+v_s_intrans	eats
+
+v_p_intrans	giggle
+v_p_intrans	smile
+v_p_intrans	sleep
+v_p_intrans	swim
+v_p_intrans	wait
+v_p_intrans	move
+v_p_intrans	change
+v_p_intrans	read
+v_p_intrans	eat
+
+v_past_intrans	giggled
+v_past_intrans	smiled
+v_past_intrans	slept
+v_past_intrans	swam
+v_past_intrans	waited
+v_past_intrans	moved
+v_past_intrans	changed
+v_past_intrans	read
+v_past_intrans	ate
+
+v_trans	entertain
+v_trans	amuse
+v_trans	high_five
+v_trans	applaud
+v_trans	confuse
+v_trans	admire
+v_trans	accept
+v_trans	remember
+v_trans	comfort
+
+v_s_trans	entertains
+v_s_trans	amuses
+v_s_trans	high_fives
+v_s_trans	applauds
+v_s_trans	confuses
+v_s_trans	admires
+v_s_trans	accepts
+v_s_trans	remembers
+v_s_trans	comforts
+
+v_p_trans	entertain
+v_p_trans	amuse
+v_p_trans	high_five
+v_p_trans	applaud
+v_p_trans	confuse
+v_p_trans	admire
+v_p_trans	accept
+v_p_trans	remember
+v_p_trans	comfort
+
+v_past_trans	entertained
+v_past_trans	amused
+v_past_trans	high_fived
+v_past_trans	applauded
+v_past_trans	confused
+v_past_trans	admired
+v_past_trans	accepted
+v_past_trans	remembered
+v_past_trans	comforted
+
+aux_p	do
+aux_s	does
+aux_p	don't
+aux_s	doesn't
+
+prep	around
+prep	near
+prep	with
+prep	upon
+prep	by
+prep	behind
+prep	above
+prep	below
+
+rel	who
+rel	that

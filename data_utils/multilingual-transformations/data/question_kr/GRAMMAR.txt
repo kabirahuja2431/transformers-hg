@@ -1,0 +1,126 @@
+1	ROOT	S .
+
+1	S	NP_Nom VP_M
+
+1	NP_Nom	N1 N_Nom
+1	NP_Nom	N2 N Prep N1 N_Nom
+1	NP_Nom	RC_I N1 N_Nom
+1	NP_Nom	N5 N_Acc RC_V N1 N_Nom
+
+1	NP_O	N5 N_Acc
+1	NP_O	N2 N Prep N5 N_Acc 
+1	NP_O	N1 N_Nom RC_V N5 N_Acc 
+
+1	VP_M	VI2 V_intrans C
+1	VP_M	NP_O VT3 V_trans C
+ 
+1	C	C 
+
+2	RC_I	VI1 V_intrans Rel
+
+1	RC_V	VT2 V_trans Rel
+
+1	N_Nom	요리사가
+1	N_Nom	감독이
+1	N_Nom	경찰이
+1	N_Nom	감독관이
+1	N_Nom	아이들이
+1	N_Nom	학생들이
+1	N_Nom	영화배우들이
+1	N_Nom	교수가 
+1	N_Nom	조교가 
+1	N_Nom	관광객이
+1	N_Nom	고양이가
+1	N_Nom	강아지가
+1	N_Nom	사슴이
+1	N_Nom	치타가
+1	N_Nom	호랑이가
+1	N_Nom	코끼리가
+1	N_Nom	나무가
+1	N_Nom	꽃이
+1	N_Nom	공이
+1	N_Nom	물이
+
+1	N_Acc	요리사를
+1	N_Acc	감독을
+1	N_Acc	경찰을
+1	N_Acc	감독관을
+1	N_Acc	아이들을
+1	N_Acc	학생들을
+1	N_Acc	영화배우들을
+1	N_Acc	교수를 
+1	N_Acc	조교를 
+1	N_Acc	관광객을
+1	N_Acc	고양이를
+1	N_Acc	강아지를
+1	N_Acc	사슴을
+1	N_Acc	치타를
+1	N_Acc	호랑이를
+1	N_Acc	코끼리를
+1	N_Acc	나무를
+1	N_Acc	꽃을
+1	N_Acc	공을
+1	N_Acc	물을
+
+1	N	요리사
+1	N	감독
+1	N	경찰
+1	N	감독관
+1	N	아이들
+1	N	학생들을
+1	N	영화배우들
+1	N	교수 
+1	N	조교 
+1	N	관광객
+1	N	고양이
+1	N	강아지
+1	N	사슴
+1	N	치타
+1	N	호랑이
+1	N	코끼리
+1	N	나무
+1	N	꽃
+1	N	공
+1	N	물
+
+1	V_intrans	자고 있
+1	V_intrans	웃고 있
+1	V_intrans	오고 있
+1	V_intrans	가고 있
+1	V_intrans	울고 있
+1	V_intrans	누워 있
+1	V_intrans	화나 있
+1	V_intrans	뛰고 있
+1	V_intrans	걷고 있
+1	V_intrans	숨고 있
+1	V_intrans	놀고 있
+
+1	V_trans		잡고 있	
+1	V_trans		먹고 있
+1	V_trans		입고 있	
+1	V_trans		읽고 있
+1	V_trans		깎고 있
+1	V_trans		물고 있
+1	V_trans		안고 있
+1	V_trans		보고 있	
+1	V_trans		마시고 있
+1	V_trans		타고 있	
+1	V_trans		찾고 있
+1	V_trans		때리고 있
+1	V_trans		훔치고 있
+
+1	C	다
+
+1	Rel	는
+
+1	Prep	주변
+1	Prep	옆에
+1	Prep	뒤에
+1	Prep	위에
+1	Prep	아래
+1	Prep	앞에
+
+
+
+
+

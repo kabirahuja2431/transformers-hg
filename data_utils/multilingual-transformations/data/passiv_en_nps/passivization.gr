@@ -1,0 +1,91 @@
+
+
+1	ROOT	S .
+
+1	S	NP_M_S VP_M_S
+1	S	NP_M_P VP_M_P
+
+1	NP_M_S	Det N1 N_S
+1	NP_M_S	Det N1 N_S Prep Det N2 N
+
+1	NP_M_P	Det N1 N_P
+1	NP_M_P	Det N1 N_P Prep Det N2 N
+
+1	NP_O	Det N5S N_S
+1	NP_O	Det N5P N_P
+1	NP_O	Det N5S N_S Prep Det N6 N
+1	NP_O	Det N5P N_P Prep Det N6 N
+
+1	N	N_S
+1	N	N_P
+
+1	VP_M_S	VT3 V_trans NP_O
+
+1	VP_M_P	VT3 V_trans NP_O
+
+1	Det	the
+1	Det	some
+1	Det	my
+1	Det	your
+1	Det	our
+1	Det	her
+
+1	N_S	newt
+1	N_S	orangutan
+1	N_S	peacock
+1	N_S	quail
+1	N_S	raven
+1	N_S	salamander
+1	N_S	tyrannosaurus
+1	N_S	unicorn
+1	N_S	vulture
+1	N_S	walrus
+1	N_S	xylophone
+1	N_S	yak
+1	N_S	zebra
+
+1	N_P	newts
+1	N_P	orangutans
+1	N_P	peacocks
+1	N_P	quails
+1	N_P	ravens
+1	N_P	salamanders
+1	N_P	tyrannosauruses
+1	N_P	unicorns
+1	N_P	vultures
+1	N_P	walruses
+1	N_P	xylophones
+1	N_P	yaks
+1	N_P	zebras
+
+1	V_intrans	giggled
+1	V_intrans	smiled
+1	V_intrans	slept
+1	V_intrans	swam
+1	V_intrans	waited
+1	V_intrans	moved
+1	V_intrans	changed
+1	V_intrans	read
+1	V_intrans	ate
+
+1	V_trans	entertained
+1	V_trans	amused
+1	V_trans	annoyed
+1	V_trans	applauded
+1	V_trans	confused
+1	V_trans	admired
+1	V_trans	accepted
+1	V_trans	remembered
+1	V_trans	comforted
+
+1	Prep	around
+1	Prep	near
+1	Prep	with
+1	Prep	upon
+1	Prep	by
+1	Prep	behind
+1	Prep	above
+1	Prep	below
+
+1	Rel	who
+1	Rel	that	

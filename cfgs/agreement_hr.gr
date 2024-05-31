@@ -1,0 +1,31 @@
+1	S	NP_S	VP_S
+1	S	NP_P	VP_P
+
+1	NP_S	Det	N_S
+1	NP_S	Det	NPP_S
+
+1	NP_P	Det	N_P
+1	NP_P	Det	NPP_P
+
+1	NPP_S	N_S	PP
+
+1	NPP_P	N_P	PP
+
+1	PP	Prep	N_O
+
+1	N_O	Det	N_S
+
+1	N_O	Det	N_P
+
+1	VP_S	v_s_intrans
+1	VP_S	V_S_trans	N_O
+
+1	VP_P	v_p_intrans
+1	VP_P	V_P_trans	N_O
+
+1	N_S	n_s
+1	N_P	n_p
+1	Det	det
+1	Prep	prep
+1	V_S_trans	v_s_trans
+1	V_P_trans	v_p_trans

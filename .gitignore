@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+__pycache__
+wandb
+out
+slurm*
+slurm_out
+.DS_Store

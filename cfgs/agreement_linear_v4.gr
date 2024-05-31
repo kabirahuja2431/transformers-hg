@@ -1,0 +1,98 @@
+1	S	det	NVP_S
+1	S	det	NVP_P
+1	S	det	NPPVP_S
+1	S	det	NPPVP_P
+1	S	det	RNPPVP_S
+1	S	det	RNPPVP_P
+
+1	NVP_S	n_s	VP_S
+
+1	NVP_P	n_p	VP_P
+
+1	NPPVP_S	n_s	PPVP_S
+1	NPPVP_S	n_p	PPVP_S
+
+1	NPPVP_P	n_s	PPVP_P
+1	NPPVP_P	n_p	PPVP_P
+
+1	RNPPVP_S	n_s	RVP_S
+
+1	RNPPVP_P	n_p	RVP_P
+
+1	RVP_S	rel	VPVP_S
+1	RVP_S	rel	DNVPVP
+
+1	RVP_P	rel	VPVP_P
+1	RVP_P	rel	DNVPVP
+
+1	DNVPVP	det	NVPVP_S
+1	DNVPVP	det	NVPVP_P
+
+1	NVPVP_S	n_s	VVP_S
+1	NVPVP_P	n_p	VVP_P
+
+1	VPVP_S	v_s_trans	DNVP
+
+1	VPVP_P	v_p_trans	DNVP
+
+1	DNVP	det	NVP_S
+1	DNVP	det	NVP_P
+
+1	VVP_S	v_s_trans	VP_S
+
+1	VVP_P	v_p_trans	VP_P
+
+1	PPVP_S	prep	DNVP_S
+
+1	PPVP_P	prep	DNVP_P
+
+1	DNVP_S	det	NVP_S
+
+1	DNVP_P	det	NVP_P
+
+1	VP_S	v_s_intrans
+1	VP_S	v_s_trans	N_O
+1	VP_S	v_s_trans	NP_O
+
+1	VP_P	v_p_intrans
+1	VP_P	v_p_trans	N_O
+1	VP_P	v_p_trans	NP_O
+
+1	N_O	det	N_S
+1	N_O	det	N_P
+
+1	NP_O	det	NNPP_O
+1	NP_O	det	NRNP_O
+
+1	NNPP_O	n_s	NPP_O
+1	NNPP_O	n_p	NPP_O
+
+1	NPP_O	prep	N_O
+
+1	NRNP_O	n_s	RVP_S_trans
+1	NRNP_O	n_p	RVP_P_trans
+1	NRNP_O	n_s	RDNV_trans
+1	NRNP_O	n_p	RDNV_trans
+
+1	RVP_S_trans	rel	VP_S_trans
+
+1	RVP_P_trans	rel	VP_P_trans
+
+1	RDNV_trans	rel	DNV_S_trans
+1	RDNV_trans	rel	DNV_P_trans
+
+1	VP_S_trans	v_s_trans	N_O
+1	VP_P_trans	v_p_trans	N_O
+
+1	DNV_S_trans	det	NV_S_trans
+
+1	DNV_P_trans	det	NV_P_trans
+
+1	NV_S_trans	n_s	V_S_trans
+
+1	NV_P_trans	n_p	V_P_trans
+
+1	N_S	n_s
+1	N_P	n_p
+1	V_S_trans	v_s_trans
+1	V_P_trans	v_p_trans

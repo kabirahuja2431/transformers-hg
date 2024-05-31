@@ -1,0 +1,2 @@
+Exact match accuracy: 0.1939
+First word accuracy: 0.6963

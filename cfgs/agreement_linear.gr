@@ -1,0 +1,34 @@
+1	S	det	NVP_S
+1	S	det	NVP_P
+1	S	det	NPPVP_S
+1	S	det	NPPVP_P
+
+1	NVP_S	n_s	VP_S
+
+1	NVP_P	n_p	VP_P
+
+1	NPPVP_S	n_s	PPVP_S
+1	NPPVP_S	n_p	PPVP_S
+
+1	NPPVP_P	n_s	PPVP_P
+1	NPPVP_P	n_p	PPVP_P
+
+1	PPVP_S	prep	DNVP_S
+
+1	PPVP_P	prep	DNVP_P
+
+1	DNVP_S	det	NVP_S
+
+1	DNVP_P	det	NVP_P
+
+1	VP_S	v_s_intrans
+1	VP_S	v_s_trans	N_O
+
+1	VP_P	v_p_intrans
+1	VP_P	v_p_trans	N_O
+
+1	N_O	det	N_S
+1	N_O	det	N_P
+
+1	N_S	n_s
+1	N_P	n_p

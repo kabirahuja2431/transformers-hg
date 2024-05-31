@@ -1,0 +1,6 @@
+slurm-*.out
+.DS_Store
+
+results/
+models/*.txt
+models/*.pkl
