@@ -187,7 +187,7 @@ class PCFG:
         return likelihood
 
     def corpus_log_likelihood(self, corpus, N=1000, io_num_iter=5):
-        if not self.mle_done and self.grammar_type !="Flat":
+        if not self.mle_done and self.grammar_type != "Flat":
             train_inside_outside(self, corpus, num_iter=io_num_iter)
             self.mle_done = True
         # breakpoint()
@@ -225,6 +225,7 @@ class PCFG:
 
             for idx, rhs in enumerate(self.cfg[lhs]):
                 self.pcfg[tuple([lhs] + rhs)] = thetas[idx]
+
         # breakpoint()
         for lhs in self.nonterminals:
             thetas = get_theta(lhs)
@@ -252,7 +253,9 @@ class PCFG:
 
             # Compute log p(\theta_k)
             # print(-1 * (len(self.cfg[non_terminal]) - 1) * np.log(self.theta_resolution))
-            log_prior += -1 * (len(self.cfg[non_terminal]) - 1) * np.log(self.theta_resolution)
+            log_prior += (
+                -1 * (len(self.cfg[non_terminal]) - 1) * np.log(self.theta_resolution)
+            )
 
             for rhs in self.cfg[non_terminal]:
                 if self.grammar_type in ["CFG-CNF", "RLG"]:
@@ -421,15 +424,13 @@ class PCFG:
 
             return vertices
 
-        
         def check_is_uniform(theta_k):
-            
+
             return np.allclose(np.array(theta_k), 1 / len(theta_k), 1e-5)
-        
-        
+
         if check_is_uniform(theta_k):
             return theta_k
-            
+
         vertices = find_grid_vertices(theta_k, g)
 
         com = np.array(vertices)
@@ -526,6 +527,7 @@ def score_merges(
 
     return merge_dict, best_grammar, best_log_posterior
 
+
 def get_log_posterior(
     new_grammar,
     corpus,
@@ -547,6 +549,7 @@ def get_log_posterior(
     except RecursionError:
         log_posterior = float("-inf")
     return log_posterior
+
 
 def score_merges_parallel(
     grammar,
@@ -702,13 +705,15 @@ def bayesian_grammar_merging_greedy(
 
 
 if __name__ == "__main__":
-    
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--g1_type", default="CFG-CNF")
     parser.add_argument("--g1_name", default="agreement_hr_v4")
     parser.add_argument("--g2_type", default="RLG")
     parser.add_argument("--g2_name", default="agreement_linear_v4")
-    parser.add_argument("--minimize", choices = ["none", "g1", "g2", "all"], default="none")
+    parser.add_argument(
+        "--minimize", choices=["none", "g1", "g2", "all"], default="none"
+    )
     parser.add_argument("--num_processes", type=int, default=32)
     parser.add_argument("--geom_p", type=float, default=0.5)
     parser.add_argument(
@@ -718,15 +723,15 @@ if __name__ == "__main__":
         help="Directory to save results",
     )
     args = parser.parse_args()
-    
+
     g1_type = args.g1_type
     g2_type = args.g2_type
     g1_name = args.g1_name
     g2_name = args.g2_name
-        
+
     g1 = PCFG(g1_type, filename=os.path.join("cfgs", g1_name + ".gr"))
     g2 = PCFG(g2_type, filename=os.path.join("cfgs", g2_name + ".gr"))
-    
+
     g1_gens, _ = g1.generate()
     g2_gens, _ = g2.generate()
 
@@ -735,46 +740,47 @@ if __name__ == "__main__":
     print("Total number of g1 generations: ", len(g1_gens))
     print("Total number of g2 generations: ", len(g2_gens))
     print(f"Number of common generations: {len(corpus)}")
-    
+
     flat_productions = {}
     for sent in corpus:
         flat_productions[tuple(["S"] + sent.split())] = 1 / len(corpus)
-        
-    flat_grammar = PCFG(
-        "Flat",
-        productions=flat_productions
-    )
-    
+
+    flat_grammar = PCFG("Flat", productions=flat_productions)
+
     one_state_grammar = OneStateGrammar(g1.terminals)
-    
+
     if args.minimize == "g1" or args.minimize == "all":
-        
+
         if os.path.exists(f"cfgs/{args.g1_name}_min.pkl"):
             with open(f"cfgs/{args.g1_name}_min.pkl", "rb") as f:
                 productions = pickle.load(f)
-            g1 = PCFG(g1_type, productions = productions)
-            
+            g1 = PCFG(g1_type, productions=productions)
+
         else:
-            g1 = bayesian_grammar_merging_greedy(g1, corpus, parallel=True, num_processes=os.cpu_count())
+            g1 = bayesian_grammar_merging_greedy(
+                g1, corpus, parallel=True, num_processes=os.cpu_count()
+            )
             with open(f"cfgs/{args.g1_name}_min.pkl", "wb") as f:
                 pickle.dump(g1.pcfg, f)
-    
+
     if args.minimize == "g2" or args.minimize == "all":
         if os.path.exists(f"cfgs/{args.g2_name}_min.pkl"):
             with open(f"cfgs/{args.g2_name}_min.pkl", "rb") as f:
                 productions = pickle.load(f)
-            g2 = PCFG(g2_type, productions = productions)
-            
+            g2 = PCFG(g2_type, productions=productions)
+
         else:
-            g2 = bayesian_grammar_merging_greedy(g2, corpus, parallel=True, num_processes=os.cpu_count())
+            g2 = bayesian_grammar_merging_greedy(
+                g2, corpus, parallel=True, num_processes=os.cpu_count()
+            )
             with open(f"cfgs/{args.g2_name}_min.pkl", "wb") as f:
                 pickle.dump(g2.pcfg, f)
-    
+
     g1_log_prior = g1.grammar_log_prob(args.geom_p)
     g2_log_prior = g2.grammar_log_prob(args.geom_p)
     flat_grammar_log_prior = flat_grammar.grammar_log_prob(args.geom_p)
     one_state_grammar_log_prior = one_state_grammar.grammar_log_prob(args.geom_p)
-    
+
     print("Log-prior probabilities:")
     print(f"Grammar 1: {g1_log_prior}")
     print(f"Grammar 2: {g2_log_prior}")
@@ -782,7 +788,7 @@ if __name__ == "__main__":
     print(f"One State Grammar: {one_state_grammar_log_prior}")
     print("*" * 50)
 
-    #Compute log-likelihood of each grammar
+    # Compute log-likelihood of each grammar
     g1_log_likelihood = g1.corpus_log_likelihood(corpus)
     g2_log_likelihood = g2.corpus_log_likelihood(corpus)
     flat_grammar_log_likelihood = flat_grammar.corpus_log_likelihood(corpus)
@@ -834,8 +840,8 @@ if __name__ == "__main__":
             "One State Grammar",
         ],
     )
-    
-    df.to_csv(f"{args.save_dir}/{args.g1_name}_{args.g2_name}_minimize_{args.minimize}.csv")
 
-    
-    
+    os.makedirs(args.save_dir, exist_ok=True)
+    df.to_csv(
+        f"{args.save_dir}/{args.g1_name}_{args.g2_name}_minimize_{args.minimize}.csv"
+    )

@@ -13,7 +13,7 @@ Official code repository for the paper [**Learning Syntax Without Planting Trees
 We recommend using a conda environment or virtual environment
 
 ```bash
-conda env create -n hiergenv python=3.11
+conda create -n hiergenv python=3.11
 conda activate hiergenv
 conda install pip
 ```
@@ -32,6 +32,7 @@ pip install -e .
 
 #### Installing remaining packages
 ```bash
+cd ..
 pip install -r requirements.txt
 ```
 

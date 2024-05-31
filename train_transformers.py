@@ -64,6 +64,7 @@ from data_utils.passiv_helpers import (
 
 WANDB_ENTITY_NAME = "<Insert-Your-Entity-Name>"
 
+
 class AttrDict(dict):
     def __init__(self, *args, **kwargs):
         super(AttrDict, self).__init__(*args, **kwargs)
@@ -590,7 +591,9 @@ if __name__ == "__main__":
         "--no_decay_lr", action="store_true", help="Whether to not decay lr!"
     )
     # this is only used if args.dataset == grammar_gen
-    parser.add_argument("--grammar", type=str, default="agreement_hr_v4_agreement_linear_v4")
+    parser.add_argument(
+        "--grammar", type=str, default="agreement_hr_v4_agreement_linear_v4"
+    )
 
     # this is only used if args.dataset == grammar_genv2
     parser.add_argument("--grammar_tgt", type=str, default="")

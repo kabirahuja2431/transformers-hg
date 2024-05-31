@@ -5,3 +5,5 @@ pandas
 matplotlib
 seaborn
 wandb
+datasets==2.14.5
+joblib
